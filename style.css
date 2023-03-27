@@ -1,0 +1,68 @@
+/* Reset the default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a custom font to the entire page */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Style the navigation menu */
+nav {
+  background-color: #f5f5f5;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 1rem;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #007aff;
+}
+
+/* Style the main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* Style the footer */
+footer {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  font-size: 1.5rem;
+  color: #333;
+}
