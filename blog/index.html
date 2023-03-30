@@ -2,11 +2,33 @@
 <html>
 
 <head>
+  <script src="https://cdn.jsdelivr.net/npm/web3modal@^1.9.0/dist/index.iife.min.js"></script>
   <title>My Blog</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
+  <script>
+    const providerOptions = {
+      walletconnect: {
+        package: WalletConnectProvider,
+        options: {
+          rpc: {
+            56: 'https://bsc-dataseed1.ninicoin.io',
+          },
+        }
+      },
+    };
+    const web3Modal = new Web3Modal({
+      cacheProvider: false,
+      providerOptions,
+    });
+    async function connectWallet() {
+      const provider = await web3Modal.connect();
+      const web3 = new Web3(provider);
+      // Use web3 instance to interact with Blockchain.
+    }
+  </script>
   <header>
     <nav>
       <ul>
@@ -17,6 +39,7 @@
       </ul>
     </nav>
   </header>
+  <button onclick="connectWallet()">Connect wallet</button>
   <main>
     <h1>Welcome to My Blog</h1>
     <p>Here you can find my latest thoughts and musings on various topics.</p>

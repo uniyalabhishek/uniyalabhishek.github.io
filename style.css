@@ -66,3 +66,16 @@ footer p {
   font-size: 1.5rem;
   color: #333;
 }
+
+button {
+  background-color: #1c72ce; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
